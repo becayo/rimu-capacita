@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimu Capacita - Asesorías Educacionales</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 4 CDN Boostrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Styles.css -->
+    <link rel="stylesheet" href="./css/styles.css">       
+</head>
+
+<body id="body">
+    <!-- Barra de navegación -->
+    <nav>
+        <!-- Logo -->
+        <a href="index.html"><img src="./images/Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <!-- Ícono de cerrar menú -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="equipo.html">EQUIPO</a></li>
+                <li><a href="que-hacemos.html">QUÉ HACEMOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <!-- Menú -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+    <!-- Home page -->
+    <section class="home-page">
+        <!-- Text box -->
+        <div class="text-box">
+            <h1>Capacitaciones y Asesorías <br> Educacionales</h1>
+            <div class="home-row">
+                <div class="home-col">
+                    <p>Somos una empresa que ofrece asesorías, cursos, talleres y charlas educacionales y empresariales enfocada en el continuo desarrollo y el liderazgo de alto desempeño.
+                    Diseñamos, desarrollamos y ejecutamos soluciones de aprendizajes para las comunidades educativas. 
+                    Esperamos co-construir por medio de la vinculación y la empatía, junto a comunidades, las condiciones que se requieren para el logro y bienestar de la misma.
+                    </p>
+                </div>
+            </div>
+            <a href="contacto.html" class="hero-btn">¿Quieres saber más? Contáctanos.</a>
+        </div>
+    </section>
+    <!-- Motivation -->
+    <section class="motivation">
+        <div class="motiv-grid">
+            <div class="motiv-box box1">
+                <h1>Nos motiva...</h1>
+            </div>
+            <div class="motiv-box box2">
+                <p>La posibilidad de ayudar a las comunidades y aportar a conseguir una transformación social y pedagógica de establecimientos educativos para alcanzar mejores resultados y potenciar cambios positivos y profundos en las comunidades... 
+                </p>
+            </div>
+        </div>
+
+        <div class="motiv-row">
+            <div class="motiv-img"></div>
+            <div class="motiv-col">
+            </div>
+        </div>
+    </section>
+
+    <section class="sello-dif">
+        <h1>Nuestro sello diferenciador</h1>
+
+        <div class="row">
+            <div class="sello-col">
+                <h3>Vinculación y acompañamiento cercano</h3>
+                <p>Nos caracterizamos por buscar siempre potenciar vínculos positivos con las comunidades para así generar un trabajo colaborativo basado en la cercanía y la empatía.
+                </p>
+            </div>
+            <div class="sello-col">
+                <h3>Entendimiento de la necesidad de las comunidades</h3>
+                <p>Sabemos que cada comunidad tiene sus propias necesidades, por lo mismo intentamos crear estrategias particulares, creativas e innovadoras para poder responder de manera adecuada a estas.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Social Networks -->
+        <ul class="social-networks-icon">
+            <li><a href="https://api.whatsapp.com/send?phone=56945021411" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            </li>
+            <li><a href="https://instagram.com/rimucapacita?igshid=YmMyMTA2M2Y=" target="_blank" class = "fa fa-instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100081746764409" target="_blank" class = "fa fa-facebook"></a></li>
+        </ul>
+        <ul class="footer-menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="equipo.html">EQUIPO</a></li>
+            <li><a href="que-hacemos.html">QUÉ HACEMOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        <p>Rimu Capacita | Copyright &copy; 2022</p>
+    </footer>
+
+
+
+<!-- JS Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    var body = document.getElementById("body");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+        body.style.overflow = "hidden";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        body.style.overflowY = "auto";
+        body.style.overflowX = "hidden";
+    }
+</script>
+
+</body>
+</html>

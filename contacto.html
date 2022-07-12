@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimu Capacita - Asesorías Educacionales</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 4 CDN Boostrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Styles.css -->
+    <link rel="stylesheet" href="./css/styles.css">       
+</head>
+
+<body id="body">
+    <!-- Barra de navegación -->
+    <nav>
+        <!-- Logo -->
+        <a href="index.html"><img src="./images/Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <!-- Ícono de cerrar menú -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="equipo.html">EQUIPO</a></li>
+                <li><a href="que-hacemos.html">QUÉ HACEMOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <!-- Menú -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   
+    <!-- Contact page -->
+    <section class="contact-page">
+        <div class="contact-title">
+            <h1>Contáctanos</h1>
+        </div>
+    </section>
+
+    <div class="title">
+        <div class="left-side">
+          <h2>INFORMACIÓN</h2>
+        </div>
+        <div class="right-side">
+            <p><span>¿Cómo te podemos ayudar?</span><br>¡Envíanos un mensaje completando el siguiente formulario!</p>   
+        </div>
+    </div>
+  
+    <div class="container">
+        <div class="left-side">
+            <div class="item">
+                <h3>EMAIL</h3>
+                <a href="mailto:rimucapacita@gmail.com">rimucapacita@gmail.com</a>
+            </div>
+            <div class="item">
+                <h3>TELÉFONO</h3>
+                <a href="tel:+56945021411">(56) 945021411</a>
+            </div>
+            <div class="item">
+                <h3>REDES SOCIALES</h3>
+                <div class="icons">
+                    <a href="https://api.whatsapp.com/send?phone=56945021411" target="_blank" class = "fa fa-whatsapp"></a>
+                    <a href="https://instagram.com/rimucapacita?igshid=YmMyMTA2M2Y=" target="_blank" class = "fa fa-instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100081746764409" target="_blank" class = "fa fa-facebook"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <form action="https://formsubmit.co/nosoychileno@gmail.com" method="post">
+                <div class="top">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="correo" placeholder="Email" required>
+                    <input type="text" name="asunto" placeholder="Asunto" required>
+                </div>
+                <textarea name="mensaje" placeholder="¿Qué te gustaría cotizar?" required></textarea>
+                <button type="submit">ENVIAR MENSAJE</button>
+            </form>
+        </div>  
+    </div>  
+
+    <footer>
+        <!-- Social Networks -->
+        <ul class="social-networks-icon">
+            <li><a href="https://api.whatsapp.com/send?phone=56945021411" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            </li>
+            <li><a href="https://instagram.com/rimucapacita?igshid=YmMyMTA2M2Y=" target="_blank" class = "fa fa-instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100081746764409" target="_blank" class = "fa fa-facebook"></a></li>
+        </ul>
+        <ul class="footer-menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="equipo.html">EQUIPO</a></li>
+            <li><a href="que-hacemos.html">QUÉ HACEMOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        <p>Rimu Capacita | Copyright &copy; 2022</p>
+    </footer>
+
+
+
+<!-- JS Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+        body.style.overflow = "hidden";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        body.style.overflowY = "auto";
+    }
+</script>
+
+</body>
+</html>
