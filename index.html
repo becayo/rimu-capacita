@@ -16,16 +16,22 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <!-- Styles.css -->
     <link rel="stylesheet" href="./css/styles.css">       
+    <!-- Script.js -->
+    <script src="./js/script.js" defer></script>
 </head>
 
-<body id="body">
-    <!-- Barra de navegación -->
-    <nav>
-        <!-- Logo -->
-        <a href="index.html"><img src="./images/Logo.png"></a>
-        <div class="nav-links" id="navLinks">
-            <!-- Ícono de cerrar menú -->
-            <i class="fa fa-times" onclick="hideMenu()"></i>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand-img">
+            <a href="index.html"><img src="./images/Logo.png"></a>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
             <ul>
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="equipo.html">EQUIPO</a></li>
@@ -33,10 +39,8 @@
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </div>
-        <!-- Menú -->
-        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-    
+
     <!-- Home page -->
     <section class="home-page">
         <!-- Text box -->
@@ -104,23 +108,6 @@
         <p>Rimu Capacita | Copyright &copy; 2022</p>
     </footer>
 
-
-
-<!-- JS Toggle Menu -->
-<script>
-    var navLinks = document.getElementById("navLinks");
-    var body = document.getElementById("body");
-
-    function showMenu(){
-        navLinks.style.right = "0";
-        body.style.overflow = "hidden";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-        body.style.overflowY = "auto";
-        body.style.overflowX = "hidden";
-    }
-</script>
 
 </body>
 </html>
