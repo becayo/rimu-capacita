@@ -137,6 +137,17 @@ body{
     border-radius: 5%;
 }
 
+@media(max-width: 545px){
+    .home-col{
+        font-size: 20px;
+        width: 100%;
+        padding: 1rem;
+        line-height: 2rem;
+        background: linear-gradient(rgba(6, 10, 23, 0.787),rgba(1, 2, 8, 0.7));
+        border-radius: 10%;
+    }
+}
+
 .hero-btn{
     display: inline-block;
     text-decoration: none;
