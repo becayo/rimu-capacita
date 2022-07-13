@@ -1,10 +1,10 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 body{
+    margin: 0;
+    padding: 0;
     background-color: #f3e5da;
 }
 
@@ -19,87 +19,89 @@ body{
 
 /* Navbar */
 
-nav{
+.navbar{
     display: flex;
-    padding: 1% 2%;
-    align-items: center;
     justify-content: space-between;
-}
-
-nav img{
-    max-width: 85%;
-    max-height: 85%;
-}
-
-.nav-links{
-    flex: 1;
-    text-align: right;
-}
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-
-.nav-links ul li a{
+    align-items: center;
+    background-color: #f3e5da;
     color: #303030;
-    text-decoration: none;
-    font-size: 16px;
     font-weight: 600;
 }
-.nav-links ul li a::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: rgba(96, 176, 244, 1);
+.brand-img{
+    margin: .5rem;
+    padding-left: 1rem; 
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #464646;
+    padding: 1rem;
     display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li a:hover::after{
-    width: 100%;
 }
 
-/* Responsive */
-nav .fa{
+
+.navbar-links li:hover{
+    background-color: rgb(74, 137, 192);
+}
+
+.toggle-button{
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-@media(max-width: 926px){
-    #body{
-        overflow-x: hidden;
-    }
-    .text-box h1{
-        font-size: 16;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: rgba(96, 176, 244, 1);
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
 
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
+@media(max-width: 950px){
+    .toggle-button{
+        display: flex;
     }
-
-    .nav-links ul{
-        padding: 15px;
+    .navbar-links{
+        display: none;
+        width: 100%;
+        background-color: rgba(96, 176, 244, 1);
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
     }
 }
+
 
 /* Home page text box with Flexbox*/
 
@@ -110,6 +112,7 @@ nav .fa{
 .text-box h1{
     font-size: 46px;
     padding: 1rem;
+    margin-top: 0;
 }
 
 .home-row{
@@ -253,7 +256,7 @@ footer{
     width: 100%;
     background: #cfaf9e;
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,6 +270,7 @@ footer .social-networks-icon, footer .footer-menu{
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    padding-left: 0;
 }
 
 footer .social-networks-icon li, footer .footer-menu li{
@@ -294,6 +298,7 @@ footer .footer-menu li a{
     text-decoration: none;
     opacity: 0.75;
 }
+
 footer .footer-menu li a:hover{
     opacity: 1;
 }
@@ -304,6 +309,16 @@ footer p{
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.1rem;
+    transition: 0.5s;   
+}
+
+@media(max-width: 465px){
+    footer .footer-menu li a, footer .social-networks-icon{
+        font-size: 15px;
+    }
+    footer p{
+        font-size: .8rem;
+    }
 }
 
 /* Contact Us Page */
