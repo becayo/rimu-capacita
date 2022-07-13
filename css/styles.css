@@ -604,7 +604,7 @@ footer p{
     line-height: 1.7rem;
 }
 
-@media(max-width: 425px){
+@media(max-width: 545px){
     .team-container .member-box .member-img img{
         max-width: 250px;
         max-height: 250px;
