@@ -416,7 +416,9 @@ footer p{
 .container .left-side .item span{
     font-size: 18px;
     color: #545454;
+    padding: 0 5px;
 }
+
 .container .left-side .item .icons a{
     padding: 0px 0px 0px 30px;
     font-size: 24px;
@@ -488,7 +490,8 @@ footer p{
       padding: 50px 0px 30px 0px;
     }
     .container{
-      flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        margin-bottom: 60px;
     }
     .title .right-side p{
       width: 90%;
@@ -514,11 +517,17 @@ footer p{
       background: none;
     }
     .container .left-side .item{
-      margin-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+    .container .left-side .item .icons{
+        display: flex;
+        flex-direction: column;
     }
     .container .left-side .item .icons a{
       padding: 0px 20px 15px 0px;
     }
+
 }
   
 @media (max-width: 520px){
